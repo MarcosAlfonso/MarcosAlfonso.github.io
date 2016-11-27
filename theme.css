@@ -1,5 +1,5 @@
 /*Front Page Styling*/
-img.FrontPageImage {
+img.FrontPageImage1 {
 	position: absolute;
 	margin: 0 auto 0 auto;
 	  display: block;
@@ -9,6 +9,22 @@ img.FrontPageImage {
 	  height: auto;
 	  
 	top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+img.FrontPageImage2 {
+	position: absolute;
+	margin: 0 auto 0 auto;
+	  display: block;
+	  max-width:900px;
+	  max-height:277px;
+	  width: auto;
+	  height: auto;
+	  
+	top: 447px;
     left: 0;
     right: 0;
     bottom: 0;
