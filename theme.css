@@ -31,6 +31,22 @@ img.FrontPageImage2 {
 
 }
 
+img.FrontPageImage3 {
+	position: absolute;
+	margin: 0 auto 0 auto;
+	  display: block;
+	  max-width:900px;
+	  max-height:277px;
+	  width: auto;
+	  height: auto;
+	  
+	top: 744px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
 /*Begin RE Page Styling*/
 .jumbotron {
 	outline: #222 solid 1px;
