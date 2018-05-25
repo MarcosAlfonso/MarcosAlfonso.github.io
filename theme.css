@@ -8,11 +8,10 @@ img.FrontPageImage1 {
 	  width: auto;
 	  height: auto;
 	  
-	top: 150px;
+	top: 125px;
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 img.FrontPageImage2 {
@@ -24,11 +23,10 @@ img.FrontPageImage2 {
 	  width: auto;
 	  height: auto;
 	  
-	top: 447px;
+	top: 422px;
     left: 0;
     right: 0;
     bottom: 0;
-
 }
 
 img.FrontPageImage3 {
@@ -40,11 +38,25 @@ img.FrontPageImage3 {
 	  width: auto;
 	  height: auto;
 	  
-	top: 744px;
+	top: 719px;
     left: 0;
     right: 0;
     bottom: 0;
+}
 
+img.FrontPageImage4 {
+	position: absolute;
+	margin: 0 auto 0 auto;
+	  display: block;
+	  max-width:900px;
+	  max-height:277px;
+	  width: auto;
+	  height: auto;
+	  
+	top: 1016px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 /*Begin RE Page Styling*/
