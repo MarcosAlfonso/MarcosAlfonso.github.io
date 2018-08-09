@@ -1,62 +1,18 @@
-/*Front Page Styling*/
-img.FrontPageImage1 {
-	position: absolute;
-	margin: 0 auto 0 auto;
-	  display: block;
-	  max-width:900px;
-	  max-height:277px;
-	  width: auto;
-	  height: auto;
-	  
-	top: 125px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.site-content {
+  padding-top: 60px;
 }
 
-img.FrontPageImage2 {
-	position: absolute;
-	margin: 0 auto 0 auto;
-	  display: block;
-	  max-width:900px;
-	  max-height:277px;
-	  width: auto;
-	  height: auto;
-	  
-	top: 422px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.site-content .image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5vw;
+  text-align: center;
 }
 
-img.FrontPageImage3 {
-	position: absolute;
-	margin: 0 auto 0 auto;
-	  display: block;
-	  max-width:900px;
-	  max-height:277px;
-	  width: auto;
-	  height: auto;
-	  
-	top: 719px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-img.FrontPageImage4 {
-	position: absolute;
-	margin: 0 auto 0 auto;
-	  display: block;
-	  max-width:900px;
-	  max-height:277px;
-	  width: auto;
-	  height: auto;
-	  
-	top: 1016px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.site-content .image-container .img {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
 }
 
 /*Begin RE Page Styling*/
