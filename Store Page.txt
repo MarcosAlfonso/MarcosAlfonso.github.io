@@ -1,0 +1,47 @@
+Delta MIDI Computer offers unparalleled control over your MIDI through a unique visual interface called a Flow Graph. Modify, Generate, Route and Filter your MIDI in any way you can imagine using its highly flexible and modular workflow.
+
+Delta was designed to have a highly usable user interface from day one and it supports a wide range of robust features such as intelligent Copy/Paste, an internal help system, a Mini Map, and more. 
+
+
+
+
+Delta is a highly flexible MIDI processor, capable of a huge range of functionality from basic to highly complex and everything in between.
+
+Delta comes with over 200 patches and templates, scratching the surface on what the device is capable of and offering useful tools like Auto Strummers, Humanizers, Chord Progression Helpers, Subtle Melody Tools, and much more.
+
+Delta's achieves all this through an intuitive visual programming model known as a Flow Graph. Flow Graphs are made up of Nodes, individual building blocks that can perform an array of essential and unique MIDI operations.
+
+The follow Nodes come with Delta, with more to come in free updates:
+
+- Transpose
+- Transpose Random
+- Set Note
+- Quantize Note
+- Chord Generator
+- Offset Velocity
+- Offset Velocity Random
+- Set Velocity
+- Delay
+- Sequential Switch
+- Chance Switch
+- If Switch
+- CV Output
+- Set Seed (For Seeded Randomization)
+
+To learn more about what each of these Nodes can do, check out the Node Reference in the User Manual.
+
+Already powerful on their own, the different Nodes can be combined and connected in an essentially infinite number of ways to achieve whatever MIDI FX you need.
+
+Features
+
+- Robust Flow Graph System for Manipulating MIDI
+- QoL-centric Interface
+- Node Editor with Reason-like controls
+- Pannable Workspace for Larger Flow Graphs, with edge panning
+- Collapsible UI
+- Intelligent Copy/Paste
+- Internal Help System
+- Notification System
+- Mini Map for Navigation
+- Settings for Snap to Grid/Grid Size
+- Useful Hotkeys
