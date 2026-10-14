@@ -1,0 +1,131 @@
+:root {
+  --bg: #f6f6f8;
+  --panel: #fff;
+  --text: #222;
+  --muted: #555;
+  --link: #1a5fd0;
+  --border: #e1e1e6;
+  --nav-bg: #222;
+  --nav-text: #d6d6d6;
+  --nav-active: #fff;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgb(0 0 0 / .08), 0 4px 14px rgb(0 0 0 / .05);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --panel: #1d1d21;
+    --text: #e8e8ea;
+    --muted: #a5a5ad;
+    --link: #7ab0ff;
+    --border: #2d2d33;
+    --shadow: 0 1px 3px rgb(0 0 0 / .4);
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { overflow-y: scroll; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+a { color: var(--link); }
+img { max-width: 100%; height: auto; }
+
+/* Header / nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--nav-bg);
+}
+
+.site-header .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+}
+
+.logo { display: block; padding: 10px 0; line-height: 0; }
+.logo img { width: 131px; height: 77px; }
+
+.site-nav { display: flex; flex-wrap: wrap; margin-left: auto; }
+
+.site-nav a {
+  display: block;
+  padding: 12px 16px;
+  color: var(--nav-text);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav a:hover { color: var(--nav-active); }
+.site-nav a[aria-current="page"] { color: var(--nav-active); border-bottom-color: var(--nav-active); }
+
+/* Layout */
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 4vw, 40px);
+}
+
+h1, h2 { line-height: 1.2; }
+h1 { margin: 0 0 .25em; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+.REShortName { margin-bottom: 0; }
+.RELongName { margin: 0 0 20px; font-size: 1.3rem; font-weight: 400; color: var(--muted); }
+
+.videoContainer {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000;
+}
+.videoContainer iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+p.description { max-width: 70ch; }
+p.storeDesc { font-style: italic; }
+a.storeLink { font-style: normal; }
+
+/* Home page product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 20px;
+}
+
+.product-grid a {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.product-grid a:hover, .product-grid a:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / .2);
+}
+
+.product-grid img { display: block; width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .product-grid a { transition: none; }
+  .product-grid a:hover, .product-grid a:focus-visible { transform: none; }
+}
