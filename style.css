@@ -99,7 +99,7 @@ h1 { margin: 0 0 .25em; font-size: clamp(1.8rem, 4vw, 2.6rem); }
 }
 .videoContainer iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
-p.description { max-width: 70ch; }
+p.description { }
 p.storeDesc { font-style: italic; }
 a.storeLink { font-style: normal; }
 
